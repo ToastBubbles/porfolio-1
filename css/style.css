@@ -1,0 +1,498 @@
+body {
+  background-color: #3f3f3f;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .s5 {
+    animation: Color-anim2 infinite 3s;
+    animation-delay: 0.5s;
+  }
+  .s6 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 0.5s;
+  }
+  .s7 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 0.8s;
+  }
+  .s8 {
+    animation: Color-anim2 infinite 3s;
+    animation-delay: 0.8s;
+  }
+  .s1 {
+    animation: Color-anim infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s2 {
+    animation: Color-anim infinite 3s;
+    animation-delay: 1s;
+  }
+  .s3 {
+    animation: Color-anim infinite 3s;
+    animation-delay: 1s;
+  }
+  .s4 {
+    animation: Color-anim infinite 3s;
+    animation-delay: 0.6s;
+    /* animation-delay: 0.6s; */
+  }
+  .s9 {
+    animation: Color-anim2 infinite 3s;
+    animation-delay: 0.9s;
+  }
+  .s10 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 0.9s;
+  }
+  .s11 {
+    animation: Color-anim2 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s12 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s13 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s14 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s15 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s16 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s17 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s18 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s19 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s20 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s21 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s22 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s23 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s24 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+
+  .s25 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s26 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s27 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s28 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s29 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+  .s30 {
+    animation: Color-anim3 infinite 3s;
+    animation-delay: 1.3s;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Logo-container {
+  display: flex;
+  justify-content: center;
+
+  /* align-items: center; */
+  background-color: #06f3ff;
+  height: 10em;
+  width: 10em;
+}
+.Segment {
+  /* display: inline; */
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    #33333300,
+    #33333300,
+    #33333300,
+    #33333300,
+    #06f3ff,
+    #ff9191,
+    #06f3ff,
+    #33333300,
+    #33333300,
+    #33333300,
+    #33333300
+  );
+  background-color: #06f3ff05;
+  background-size: 400% 400%;
+  /* height: 400px; */
+  width: 1%;
+}
+.Box-container {
+  margin: auto;
+  margin-top: 100px;
+  border: solid black 1px;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  /* background-color: #3c4647; */
+}
+
+.s1 {
+  left: 0;
+  top: 0%;
+  bottom: 5%;
+}
+.s2 {
+  left: 5%;
+  top: 5%;
+  bottom: 0%;
+}
+.s3 {
+  left: 40%;
+  top: 40%;
+  bottom: 0%;
+}
+.s4 {
+  left: 35%;
+  top: 35%;
+  bottom: 5%;
+}
+
+.s5 {
+  right: 25%;
+  top: 5%;
+  bottom: 35%;
+}
+.s6 {
+  right: 30%;
+  top: 0%;
+  bottom: 40%;
+}
+.s7 {
+  right: 5%;
+  top: 0%;
+  bottom: 5%;
+}
+.s8 {
+  right: 0%;
+  top: 5%;
+  bottom: 0%;
+}
+
+.s9 {
+  left: 35%;
+  top: 35%;
+  height: 65%;
+  transform: rotate(-21.75deg);
+  transform-origin: top;
+}
+.s10 {
+  left: 40%;
+  top: 40%;
+  height: 65%;
+  transform: rotate(-21.75deg);
+  transform-origin: top;
+}
+
+.s11 {
+  left: 50%;
+  top: 5%;
+  height: 65%;
+  transform: rotate(-21.75deg);
+  transform-origin: top;
+}
+.s12 {
+  left: 45%;
+  top: 0%;
+  height: 65%;
+  transform: rotate(-21.75deg);
+  transform-origin: top;
+}
+
+.s13 {
+  transform: rotate(90deg);
+  transform-origin: bottom;
+  bottom: 0%;
+  left: 5%;
+  height: 35%;
+}
+.s14 {
+  transform: rotate(90deg);
+  transform-origin: bottom;
+  bottom: 5%;
+  left: 0%;
+  height: 35%;
+}
+
+.s15 {
+  height: 8%;
+  transform: rotate(135deg);
+  transform-origin: bottom;
+  bottom: 5.5%;
+  left: -0.5%;
+}
+.s16 {
+  height: 8%;
+  transform: rotate(135deg);
+  transform-origin: bottom;
+  bottom: 5.5%;
+  left: 34.5%;
+}
+
+.s17 {
+  transform: rotate(-90deg);
+  transform-origin: top;
+  top: 0%;
+  left: 0%;
+  height: 45%;
+}
+.s18 {
+  transform: rotate(-90deg);
+  transform-origin: top;
+  top: 5%;
+  left: 5%;
+  height: 45%;
+}
+.s19 {
+  height: 8%;
+  transform: rotate(-45deg);
+  transform-origin: top;
+  top: 0%;
+  left: -0.5%;
+}
+.s20 {
+  height: 8%;
+  transform: rotate(-45deg);
+  transform-origin: top;
+  top: 0%;
+  left: 45%;
+}
+
+.s21 {
+  transform: rotate(90deg);
+  transform-origin: top;
+  top: 0%;
+  right: 5%;
+  height: 25%;
+}
+.s22 {
+  transform: rotate(90deg);
+  transform-origin: top;
+  top: 5%;
+  right: 0%;
+  height: 25%;
+}
+.s23 {
+  height: 8%;
+  transform: rotate(-45deg);
+  transform-origin: top;
+  top: 0%;
+  right: 5%;
+}
+.s24 {
+  height: 8%;
+  transform: rotate(-45deg);
+  transform-origin: top;
+  top: 0%;
+  right: 30%;
+}
+
+.s25 {
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+  bottom: 0%;
+  right: 0%;
+  height: 35%;
+}
+.s26 {
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+  bottom: 5%;
+  right: 5%;
+  height: 35%;
+}
+
+.s27 {
+  height: 8%;
+  transform: rotate(135deg);
+  transform-origin: bottom;
+  bottom: 5.5%;
+  right: 5%;
+}
+.s28 {
+  height: 8%;
+  transform: rotate(135deg);
+  transform-origin: bottom;
+  bottom: 5.5%;
+  right: 40%;
+}
+/* ******* */
+.s29 {
+  height: 8%;
+  transform: rotate(135deg);
+  transform-origin: bottom;
+  bottom: 65%;
+  left: 35%;
+}
+.s30 {
+  height: 8%;
+  transform: rotate(135deg);
+  transform-origin: bottom;
+  bottom: 41%;
+  left: 68%;
+}
+
+/* .s5 {
+  height: 57.5%;
+  transform: rotate(77deg);
+  transform-origin: bottom;
+  bottom: 87.5%;
+}
+.s6 {
+  height: 45%;
+  transform: rotate(-73deg);
+  transform-origin: top;
+  top: -0.5%;
+  left: 56%;
+}
+
+.s7 {
+  height: 45%;
+  transform: rotate(-73deg);
+  transform-origin: top;
+  top: 12.5%;
+  left: 0%;
+}
+.s8 {
+  height: 57.5%;
+  transform: rotate(77deg);
+  transform-origin: bottom;
+  bottom: 74.5%;
+  left: 42.5%;
+} */
+/* .s9 {
+  height: 57.5%;
+  transform: rotate(77deg);
+  transform-origin: bottom;
+  bottom: 12.5%;
+  left: 0%;
+}
+.s10 {
+  height: 45%;
+  transform: rotate(-73deg);
+  transform-origin: bottom;
+  bottom: 12.5%;
+  right: 0%;
+}
+
+.s11 {
+  height: 57.5%;
+  transform: rotate(77deg);
+  transform-origin: bottom;
+  bottom: 0%;
+  left: 42.5%;
+}
+.s12 {
+  height: 45%;
+  transform: rotate(-73deg);
+  transform-origin: bottom;
+  bottom: 0%;
+  left: 42.5%;
+} */
+
+@keyframes Color-anim {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes Color-anim2 {
+  0% {
+    background-position: 0% 100%;
+  }
+  10% {
+    background-position: 0% 100%;
+  }
+  75% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes Color-anim3 {
+  0% {
+    background-position: 0% 100%;
+  }
+  10% {
+    background-position: 0% 100%;
+  }
+  70% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes Color-anim4 {
+  0% {
+    background-position: 0% 100%;
+  }
+  10% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
