@@ -4,125 +4,125 @@ body {
 @media (prefers-reduced-motion: no-preference) {
   .s5 {
     animation: Color-anim2 infinite 3s;
-    animation-delay: 0.5s;
+    animation-delay: 2s;
   }
   .s6 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
   }
   .s7 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 0.8s;
+    animation-delay: 2s;
   }
   .s8 {
     animation: Color-anim2 infinite 3s;
-    animation-delay: 0.8s;
+    animation-delay: 2s;
   }
   .s1 {
     animation: Color-anim infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s2 {
     animation: Color-anim infinite 3s;
-    animation-delay: 1s;
+    animation-delay: 2s;
   }
   .s3 {
     animation: Color-anim infinite 3s;
-    animation-delay: 1s;
+    animation-delay: 2s;
   }
   .s4 {
     animation: Color-anim infinite 3s;
-    animation-delay: 0.6s;
-    /* animation-delay: 0.6s; */
+    animation-delay: 2s;
   }
   .s9 {
     animation: Color-anim2 infinite 3s;
-    animation-delay: 0.9s;
+    animation-delay: 2s;
   }
   .s10 {
-    animation: Color-anim3 infinite 3s;
-    animation-delay: 0.9s;
+    animation: Color-anim2 infinite 3s;
+    animation-delay: 2s;
   }
   .s11 {
-    animation: Color-anim2 infinite 3s;
-    animation-delay: 1.3s;
+    animation: Color-anim infinite 3s;
+    animation-delay: 0.6s;
   }
   .s12 {
-    animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation: Color-anim infinite 3s;
+    animation-delay: 0.4s;
   }
   .s13 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s14 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s15 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s16 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s17 {
+    /* top left */
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 0s;
   }
   .s18 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 0.1s;
   }
   .s19 {
-    animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation: Color-anim5 infinite 3s;
+    animation-delay: 0s;
   }
   .s20 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 0.3s;
   }
   .s21 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s22 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s23 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s24 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
 
   .s25 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s26 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s27 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s28 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s29 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 2s;
   }
   .s30 {
     animation: Color-anim3 infinite 3s;
-    animation-delay: 1.3s;
+    animation-delay: 0.6s;
   }
 }
 
@@ -493,6 +493,17 @@ body {
   }
 
   100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes Color-anim5 {
+  0% {
+    background-position: 0% 100%;
+  }
+  10% {
+    background-position: 0% 100%;
+  }
+  50% {
     background-position: 0% 0%;
   }
 }
