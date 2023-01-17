@@ -295,23 +295,23 @@ nav {
   box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.9);
   margin-top: 2em;
 }
-#shutter-box:hover .apt1 {
-  translate: -6em 6em;
+#shutter-box:hover #apt1 {
+  translate: -8.02em 4.46em;
 }
-#shutter-box:hover .apt2 {
+#shutter-box:hover #apt2 {
   translate: -8em 0em;
 }
-#shutter-box:hover .apt3 {
+#shutter-box:hover #apt3 {
   translate: -6em -6em;
 }
-#shutter-box:hover .apt4 {
+#shutter-box:hover #apt4 {
   translate: 6em -6em;
 }
-#shutter-box:hover .apt5 {
+#shutter-box:hover #apt5 {
   translate: 8em 0em;
 }
-#shutter-box:hover .apt6 {
-  translate: 6em 6em;
+#shutter-box:hover #apt6 {
+  translate: 0em 9.46em;
 }
 /* .guide {
     position: absolute;
@@ -328,38 +328,123 @@ nav {
   right: -100em;
   width: 40em;
   height: 60em;
-  background-color: rgba(50, 50, 50, 1);
-  box-shadow: 0 0 10em 0 rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(50, 50, 50, 1); */
+  background-color: red;
+  /* box-shadow: 0 0 10em 0 rgba(0, 0, 0, 0.7); */
   transition: all 3s ease;
 }
 
-.apt1 {
+/* #apt1 {
   right: 0em;
   top: 23.666em;
   rotate: 30deg;
+} */
+#apt1 {
+  z-index: 1;
+  background-color: green;
+  /* 210d */
+  /* background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 9%,
+    rgba(50, 50, 50, 1) 10%
+  ); */
+
+  transform-origin: top left;
+
+  width: 25em;
+
+  height: 30em;
+  clip-path: polygon(0% 0, 100%50%, 0% 100%);
+
+  left: 15em;
+  top: 15em;
 }
-.apt2 {
+#apt2 {
   right: 15em;
   top: 30em;
   rotate: 90deg;
+
+  /* 60d */
+  /* background: linear-gradient(
+    60deg,
+    rgba(255, 0, 0, 1) 82%,
+    rgba(50, 50, 50, 1) 83%
+  ); */
 }
-.apt3 {
+#apt3 {
   right: 30em;
   top: 23.666em;
   rotate: 150deg;
+  /* 60d */
+  /* background: linear-gradient(
+    60deg,
+    rgba(255, 0, 0, 1) 82%,
+    rgba(50, 50, 50, 1) 83%
+  ); */
 }
-.apt4 {
+#apt4 {
   right: 30em;
   top: 6.333em;
   rotate: -150deg;
 }
-.apt5 {
+#apt5 {
   right: 15em;
   top: 0em;
   rotate: 270deg;
 }
-.apt6 {
-  right: 0em;
+/* #apt6 { */
+/* background-color: red; */
+
+/* right: 0em;
   top: 6.333em;
-  rotate: -30deg;
+  rotate: -30deg; */
+
+/* -webkit-mask: url(#apt1); */
+/* mask: url(#apt1); */
+
+/* mask-mode: auto;
+  mask-type: auto; */
+
+/* mask-repeat: no-repeat; */
+/* mask-type: alpha; */
+/* } */
+.slide-shadow {
+  position: absolute;
+  top: -1em;
+  width: 100%;
+  height: 1em;
+  background-color: rgba(0, 0, 0, 0.662);
 }
+#apt6 {
+  transform-origin: top left;
+  background-color: red;
+  /* background-color: red; */
+  width: 25em;
+  /* aspect-ratio: 1 / 1; */
+  height: 30em;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  /* box-shadow: 0 0 10em 0 rgba(0, 0, 0, 0.7); */
+
+  left: 15em;
+  top: 0em;
+  /* rotate: -30deg; */
+
+  /* -webkit-mask: url(#apt1); */
+  /* mask: url(#apt1); */
+
+  /* mask-mode: auto;
+  mask-type: auto; */
+
+  /* mask-repeat: no-repeat; */
+  /* mask-type: alpha; */
+}
+
+/* #apt6 {
+  transform-origin: top left;
+  top: 15em;
+  left: 15em;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+} */
