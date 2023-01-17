@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "terano-font";
   src: url("./TeranoRegular.ttf");
 }
@@ -16,7 +16,7 @@
   font-family: "bisect-font";
   font-size: 2em;
   margin: auto;
-  /* color: rgb(20, 168, 168); */
+
   background-image: linear-gradient(
     0deg,
     rgb(46, 46, 46) 0%,
@@ -28,17 +28,17 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  /* mix-blend-mode: difference; */
+
 }
 body {
   margin: 0%;
 }
 nav {
   display: flex;
-  /* position: relative; */
+
   align-items: center;
   height: 5em;
-  /* background-color: rgba(37, 37, 37, 0.22); */
+
   background: rgb(19, 19, 19);
   background: linear-gradient(
     0deg,
@@ -78,15 +78,7 @@ nav {
 #shutter-box:hover .apt6 {
   animation: slide6 3s ease 0s 1 forwards;
 }
-.guide {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background-color: red;
-  top: 15em;
-  left: 15em;
-  margin: auto;
-}
+
 .apt-slide {
   position: absolute;
   transform-origin: top right;
@@ -99,35 +91,35 @@ nav {
 .apt1 {
   right: 0em;
   top: 23.666em;
-  /* transform: rotate(45deg); */
+
   transform: rotate(30deg);
   animation: rev1 3s ease 0s 1 forwards;
 }
 .apt2 {
   right: 15em;
   top: 30em;
-  /* transform: rotate(90deg); */
+
   transform: rotate(90deg);
   animation: rev2 3s ease 0s 1 forwards;
 }
 .apt3 {
   right: 30em;
   top: 23.666em;
-  /* transform: rotate(135deg); */
+
   transform: rotate(150deg);
   animation: rev3 3s ease 0s 1 forwards;
 }
 .apt4 {
   right: 30em;
   top: 6.333em;
-  /* transform: rotate(225deg); */
+
   transform: rotate(-150deg);
   animation: rev4 3s ease 0s 1 forwards;
 }
 .apt5 {
   right: 15em;
   top: 0em;
-  /* transform: rotate(270deg); */
+
   transform: rotate(270deg);
   animation: rev5 3s ease 0s 1 forwards;
 }
@@ -233,4 +225,141 @@ nav {
   to {
     translate: 0em 0em;
   }
+} */
+
+@font-face {
+  font-family: "terano-font";
+  src: url("./TeranoRegular.ttf");
+}
+
+.terano {
+  font-family: "terano-font";
+}
+
+@font-face {
+  font-family: "bisect-font";
+  src: url("./Bisect.otf");
+}
+
+.bisect {
+  font-family: "bisect-font";
+  font-size: 2em;
+  margin: auto;
+
+  background-image: linear-gradient(
+    0deg,
+    rgb(46, 46, 46) 0%,
+    rgb(0, 140, 152) 58.2%,
+    rgb(75, 75, 75) 58.3%,
+    rgb(33, 33, 33) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* mix-blend-mode: difference; */
+}
+body {
+  margin: 0%;
+}
+nav {
+  display: flex;
+
+  align-items: center;
+  height: 5em;
+
+  background: rgb(19, 19, 19);
+  background: linear-gradient(
+    0deg,
+    rgb(33, 33, 33) 0%,
+    rgb(75, 75, 75) 53%,
+    rgb(0, 140, 152) 54%,
+    rgb(46, 46, 46) 100%
+  );
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#shutter-box {
+  position: relative;
+  width: 30em;
+  aspect-ratio: 1 / 1;
+  margin: auto;
+  /* background-color: rgba(176, 59, 59, 0.646); */
+  background-color: #fff;
+  background-image: url("../img/happyshrimp.png");
+  background-size: 60%;
+  background-position: 6em 7em;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 50em;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.9);
+  margin-top: 2em;
+}
+#shutter-box:hover .apt1 {
+  translate: -6em 6em;
+}
+#shutter-box:hover .apt2 {
+  translate: -8em 0em;
+}
+#shutter-box:hover .apt3 {
+  translate: -6em -6em;
+}
+#shutter-box:hover .apt4 {
+  translate: 6em -6em;
+}
+#shutter-box:hover .apt5 {
+  translate: 8em 0em;
+}
+#shutter-box:hover .apt6 {
+  translate: 6em 6em;
+}
+/* .guide {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: red;
+    top: 15em;
+    left: 15em;
+    margin: auto;
+  } */
+.apt-slide {
+  position: absolute;
+  transform-origin: top right;
+  right: -100em;
+  width: 40em;
+  height: 60em;
+  background-color: rgba(50, 50, 50, 1);
+  box-shadow: 0 0 10em 0 rgba(0, 0, 0, 0.7);
+  transition: all 3s ease;
+}
+
+.apt1 {
+  right: 0em;
+  top: 23.666em;
+  rotate: 30deg;
+}
+.apt2 {
+  right: 15em;
+  top: 30em;
+  rotate: 90deg;
+}
+.apt3 {
+  right: 30em;
+  top: 23.666em;
+  rotate: 150deg;
+}
+.apt4 {
+  right: 30em;
+  top: 6.333em;
+  rotate: -150deg;
+}
+.apt5 {
+  right: 15em;
+  top: 0em;
+  rotate: 270deg;
+}
+.apt6 {
+  right: 0em;
+  top: 6.333em;
+  rotate: -30deg;
 }
