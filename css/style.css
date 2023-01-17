@@ -101,69 +101,136 @@ nav {
   top: 23.666em;
   /* transform: rotate(45deg); */
   transform: rotate(30deg);
+  animation: rev1 3s ease 0s 1 forwards;
 }
 .apt2 {
   right: 15em;
   top: 30em;
   /* transform: rotate(90deg); */
   transform: rotate(90deg);
-  /* animation: slide2 3s ease 0s 1 forwards; */
+  animation: rev2 3s ease 0s 1 forwards;
 }
 .apt3 {
   right: 30em;
   top: 23.666em;
   /* transform: rotate(135deg); */
   transform: rotate(150deg);
-  /* animation: slide3 3s ease 0s 1 forwards; */
+  animation: rev3 3s ease 0s 1 forwards;
 }
 .apt4 {
   right: 30em;
   top: 6.333em;
   /* transform: rotate(225deg); */
   transform: rotate(-150deg);
-  /* animation: slide4 3s ease 0s 1 forwards; */
+  animation: rev4 3s ease 0s 1 forwards;
 }
 .apt5 {
   right: 15em;
   top: 0em;
   /* transform: rotate(270deg); */
   transform: rotate(270deg);
-  /* animation: slide5 3s ease 0s 1 forwards; */
+  animation: rev5 3s ease 0s 1 forwards;
 }
 .apt6 {
   right: 0em;
   top: 6.333em;
   transform: rotate(-30deg);
-  /* animation: slide6 3s ease 0s 1 forwards; */
+  animation: rev6 3s ease 0s 1 forwards;
 }
 
 @keyframes slide1 {
+  from {
+    translate: 0em 0em;
+  }
   to {
     translate: -6em 6em;
   }
 }
+@keyframes rev1 {
+  from {
+    translate: -6em 6em;
+  }
+  to {
+    translate: 0em 0em;
+  }
+}
 @keyframes slide2 {
+  from {
+    translate: 0em 0em;
+  }
   to {
     translate: -8em 0em;
   }
 }
+@keyframes rev2 {
+  from {
+    translate: -8em 0em;
+  }
+  to {
+    translate: 0em 0em;
+  }
+}
 @keyframes slide3 {
+  from {
+    translate: 0em 0em;
+  }
   to {
     translate: -6em -6em;
   }
 }
+@keyframes rev3 {
+  from {
+    translate: -6em -6em;
+  }
+  to {
+    translate: 0em 0em;
+  }
+}
 @keyframes slide4 {
+  from {
+    translate: 0em 0em;
+  }
   to {
     translate: 6em -6em;
   }
 }
+@keyframes rev4 {
+  from {
+    translate: 6em -6em;
+  }
+  to {
+    translate: 0em 0em;
+  }
+}
 @keyframes slide5 {
+  from {
+    translate: 0em 0em;
+  }
   to {
     translate: 8em 0em;
   }
 }
+@keyframes rev5 {
+  from {
+    translate: 8em 0em;
+  }
+  to {
+    translate: 0em 0em;
+  }
+}
 @keyframes slide6 {
+  from {
+    translate: 0em 0em;
+  }
   to {
     translate: 6em 6em;
+  }
+}
+@keyframes rev6 {
+  from {
+    translate: 6em 6em;
+  }
+  to {
+    translate: 0em 0em;
   }
 }
