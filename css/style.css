@@ -313,9 +313,7 @@ nav {
 #shutter-box:hover #apt6 {
   translate: 0em 9.46em;
 }
-#shutter-box:hover #apt5 #psuedo-shadow7 {
-  translate: 999em 9.46em;
-}
+
 /* .guide {
     position: absolute;
     width: 2px;
@@ -331,8 +329,8 @@ nav {
   right: -100em;
   width: 40em;
   height: 60em;
-  /* background-color: rgba(50, 50, 50, 1); */
-  background-color: red;
+  background-color: rgba(50, 50, 50, 1);
+  /* background-color: red; */
   /* box-shadow: 0 0 10em 0 rgba(0, 0, 0, 0.7); */
   transition: all 3s ease;
 }
@@ -344,7 +342,7 @@ nav {
 } */
 #apt1 {
   z-index: 1;
-  background-color: red;
+  /* background-color: red; */
   /* 210d */
   /* background: linear-gradient(
     90deg,
@@ -416,7 +414,13 @@ nav {
   top: -1em;
   width: 100%;
   height: 1em;
-  background-color: rgba(0, 0, 0, 0.662);
+  /* background-color: rgba(0, 0, 0, 0.662); */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 .slide-shadow1 {
   position: absolute;
@@ -425,7 +429,9 @@ nav {
   transform: rotate(90deg);
   width: 100%;
   height: 1em;
-  background-color: rgba(0, 0, 0, 0.662);
+  /* background-color: rgba(0, 0, 0, 0.662); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: all 3s ease;
 }
 .slide-shadow2 {
   position: absolute;
@@ -436,7 +442,13 @@ nav {
   width: 100%;
   height: 1em;
   clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
-  background-color: rgba(0, 0, 0, 0.662);
+  /* background-color: rgba(0, 0, 0, 0.662); */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transition: all 3s ease;
 }
 .slide-shadow3 {
   position: absolute;
@@ -447,7 +459,9 @@ nav {
   width: 100%;
   height: 1em;
   clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
-  background-color: rgba(0, 0, 0, 0.662);
+  /* background-color: rgba(0, 0, 0, 0.662); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: all 3s ease;
 }
 .slide-shadow4 {
   position: absolute;
@@ -458,7 +472,9 @@ nav {
   width: 100%;
   height: 1em;
   clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
-  background-color: rgba(0, 0, 0, 0.662);
+  /* background-color: rgba(0, 0, 0, 0.662); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: all 3s ease;
 }
 .slide-shadow5 {
   position: absolute;
@@ -469,7 +485,9 @@ nav {
   width: 100%;
   height: 1em;
   clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
-  background-color: rgba(0, 0, 0, 0.662);
+  /* background-color: rgba(0, 0, 0, 0.662); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: all 3s ease;
 }
 .slide-shadow6 {
   position: absolute;
@@ -479,7 +497,9 @@ nav {
   transform: rotate(31deg);
   width: 100%;
   height: 1em;
-  background-color: rgba(0, 0, 0, 0.662);
+  /* background-color: rgba(0, 0, 0, 0.662); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: all 3s ease;
 }
 #pseudo-shadow7 {
   position: absolute;
@@ -489,13 +509,27 @@ nav {
   rotate: 59deg;
   width: 100%;
   height: 1em;
-  background-color: rgba(0, 0, 0, 0.662);
+  /* background-color: rgba(0, 0, 0, 0.662); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
   transition: all 3s ease;
 }
+
+#shutter-box:hover #pseudo-shadow7 {
+  translate: -4.5em 0em;
+}
+#shutter-box:hover .slide-shadow3 {
+  translate: 2.55em 0em;
+}
+#shutter-box:hover .slide-shadow4 {
+  translate: 6.9em 0em;
+}
+#shutter-box:hover .slide-shadow5 {
+  translate: 4.8em 0em;
+}
 #apt6 {
   transform-origin: top left;
-  background-color: red;
+  /* background-color: red; */
   /* background-color: red; */
   width: 25em;
   /* aspect-ratio: 1 / 1; */
