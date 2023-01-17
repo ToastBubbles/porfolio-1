@@ -35,6 +35,7 @@ body {
 }
 nav {
   display: flex;
+  /* position: relative; */
   align-items: center;
   height: 5em;
   /* background-color: rgba(37, 37, 37, 0.22); */
@@ -42,9 +43,109 @@ nav {
   background: linear-gradient(
     0deg,
     rgb(33, 33, 33) 0%,
-    rgba(75, 75, 75, 1) 53%,
-    rgba(0, 140, 152, 1) 54%,
-    rgba(46, 46, 46, 1) 100%
+    rgb(75, 75, 75) 53%,
+    rgb(0, 140, 152) 54%,
+    rgb(46, 46, 46) 100%
   );
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#shutter-box {
+  position: relative;
+  width: 30em;
+  aspect-ratio: 1 / 1;
+  margin: auto;
+  background-color: rgba(176, 59, 59, 0.646);
+  overflow: hidden;
+  border-radius: 50em;
+}
+.guide {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: red;
+  top: 15em;
+  left: 15em;
+  margin: auto;
+}
+.apt-slide {
+  position: absolute;
+  transform-origin: top right;
+  right: -100em;
+  width: 40em;
+  height: 60em;
+  background-color: rgba(50, 50, 50, 1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
+}
+.apt1 {
+  right: 0em;
+  top: 23.666em;
+  /* transform: rotate(45deg); */
+  transform: rotate(30deg);
+  animation: slide1 3s ease 0s 1 forwards;
+}
+.apt2 {
+  right: 15em;
+  top: 30em;
+  /* transform: rotate(90deg); */
+  transform: rotate(90deg);
+  animation: slide2 3s ease 0s 1 forwards;
+}
+.apt3 {
+  right: 30em;
+  top: 23.666em;
+  /* transform: rotate(135deg); */
+  transform: rotate(150deg);
+  animation: slide3 3s ease 0s 1 forwards;
+}
+.apt4 {
+  right: 30em;
+  top: 6.333em;
+  /* transform: rotate(225deg); */
+  transform: rotate(-150deg);
+  animation: slide4 3s ease 0s 1 forwards;
+}
+.apt5 {
+  right: 15em;
+  top: 0em;
+  /* transform: rotate(270deg); */
+  transform: rotate(270deg);
+  animation: slide5 3s ease 0s 1 forwards;
+}
+.apt6 {
+  right: 0em;
+  top: 6.333em;
+  transform: rotate(-30deg);
+  animation: slide6 3s ease 0s 1 forwards;
+}
+
+@keyframes slide1 {
+  100% {
+    translate: -6em 6em;
+  }
+}
+@keyframes slide2 {
+  100% {
+    translate: -8em 0em;
+  }
+}
+@keyframes slide3 {
+  100% {
+    translate: -6em -6em;
+  }
+}
+@keyframes slide4 {
+  100% {
+    translate: 6em -6em;
+  }
+}
+@keyframes slide5 {
+  100% {
+    translate: 8em 0em;
+  }
+}
+@keyframes slide6 {
+  100% {
+    translate: 6em 6em;
+  }
 }
