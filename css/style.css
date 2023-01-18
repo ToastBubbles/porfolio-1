@@ -67,6 +67,8 @@ nav {
 #test {
   position: absolute;
   width: 30%;
+  left: 35%;
+  top: 35%;
   aspect-ratio: 1 / 1;
 }
 #newGuide {
@@ -96,7 +98,7 @@ nav {
   left: 35%;
 
   width: 30%;
-  height: 10%;
+  height: 0%;
   transform-origin: top center;
   transform: rotate(90deg);
 }
@@ -150,7 +152,7 @@ nav {
   border: solid black 0.5em;
   /* box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.9); */
   /* margin-top: 2em; */
-  /* transform: skew(15deg, 0deg); */
+  transform: skew(0deg, 0deg);
 }
 
 #shutter-box:hover #apt1 {
