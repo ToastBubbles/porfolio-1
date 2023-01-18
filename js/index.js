@@ -53,8 +53,14 @@ onmousemove = function (e) {
   // console.log(depth2Pos);
   updateDepth(depth2Pos);
 
+  // let newLensPos = [
+  //   camLensRing.offsetLeft + camLensRing.offsetWidth / 2,
+  //   camLensRing.offsetTop + camLensRing.offsetHeight - 16,
+  // ];
   let newLensPos = [
-    camLensRing.offsetLeft + camLensRing.offsetWidth / 2,
+    camContainer.offsetLeft +
+      camLensRing.offsetLeft +
+      camLensRing.offsetWidth / 2,
     camLensRing.offsetTop + camLensRing.offsetHeight - 16,
   ];
 
