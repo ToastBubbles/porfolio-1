@@ -9,35 +9,20 @@ let aperture = document.getElementById("test");
 let camCenterPos = [0, 0];
 
 onmousemove = function (e) {
-  let distanceLimit = 4;
+  let distanceLimit = 1;
   let lensLength = 0;
-  let xPos = "";
-  let yPos = "";
+
   mouseX = e.clientX;
   mouseY = e.clientY;
-  // console.log(this.window.scrollY);
+
   camCenterPos = [
     camContainer.offsetLeft + camContainer.offsetWidth / 2,
     camContainer.offsetTop + camContainer.offsetHeight / 2,
   ];
-  // console.log(camCenterPos);
 
-  // if (mouseX <= camCenterPos[0]) {
-  //   xPos = "left";
-  // } else {
-  //   xPos = "right";
-  // }
-  // if (mouseY >= camCenterPos[1]) {
-  //   yPos = "below";
-  // } else {
-  //   yPos = "above";
-  // }
-  //console.log(xPos, yPos);
   camPosX = mouseX - camCenterPos[0];
   camPosY = (mouseY - camCenterPos[1]) * -1;
-  //console.log(mouseX, mouseY);
-  // /console.log(camPosX, camPosY);
-  // updateLens([(camPosX / camContainer.offsetWidth) * 2, 0]);
+
   let lens2Pos = [
     ((camPosX / distanceLimit + camContainer.offsetWidth / 2) /
       camContainer.offsetWidth) *
@@ -51,12 +36,11 @@ onmousemove = function (e) {
 
   let newLensPos = [
     camLensRing.offsetLeft + camLensRing.offsetWidth / 2,
-    camLensRing.offsetTop + camLensRing.offsetHeight + 16,
+    camLensRing.offsetTop + camLensRing.offsetHeight - 16,
   ];
-  // console.log((camPosX / camContainer.offsetWidth) * 2);
-  //console.log(lens2Pos);
+
   updateGuide(newLensPos);
-  // console.log(camCenterPos, newLensPos);
+
   let angleDeg =
     (Math.atan2(
       newLensPos[1] - camCenterPos[1],
@@ -65,9 +49,12 @@ onmousemove = function (e) {
       180) /
     Math.PI;
 
-  lensLength = getDistance(camCenterPos, newLensPos);
+  lensLength =
+    getDistance(camCenterPos, newLensPos) / (camContainer.offsetWidth / 2);
+  console.log(lensLength, camContainer.offsetWidth / 2);
   // console.log(lensLength);
-  rotateLens(angleDeg - 90, lensLength / 8 + 2);
+  // rotateLens(angleDeg - 90, lensLength / 8 + 2);
+  rotateLens(angleDeg - 90, lensLength);
 };
 
 function updateLens(pos) {
@@ -78,7 +65,7 @@ function updateLens(pos) {
 }
 function rotateLens(ang, h) {
   camLensBod.style.transform = `rotate(${ang}deg)`;
-  camLensBod.style.height = h + "%";
+  camLensBod.style.height = h * 50 + "%";
 }
 function updateGuide(pos) {
   document.getElementById("newGuide").style.left = pos[0] + "px";
