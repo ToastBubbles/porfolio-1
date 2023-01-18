@@ -1,232 +1,3 @@
-/* @font-face {
-  font-family: "terano-font";
-  src: url("./TeranoRegular.ttf");
-}
-
-.terano {
-  font-family: "terano-font";
-}
-
-@font-face {
-  font-family: "bisect-font";
-  src: url("./Bisect.otf");
-}
-
-.bisect {
-  font-family: "bisect-font";
-  font-size: 2em;
-  margin: auto;
-
-  background-image: linear-gradient(
-    0deg,
-    rgb(46, 46, 46) 0%,
-    rgb(0, 140, 152) 58.2%,
-    rgb(75, 75, 75) 58.3%,
-    rgb(33, 33, 33) 100%
-  );
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-
-}
-body {
-  margin: 0%;
-}
-nav {
-  display: flex;
-
-  align-items: center;
-  height: 5em;
-
-  background: rgb(19, 19, 19);
-  background: linear-gradient(
-    0deg,
-    rgb(33, 33, 33) 0%,
-    rgb(75, 75, 75) 53%,
-    rgb(0, 140, 152) 54%,
-    rgb(46, 46, 46) 100%
-  );
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-#shutter-box {
-  position: relative;
-  width: 30em;
-  aspect-ratio: 1 / 1;
-  margin: auto;
-  background-color: rgba(176, 59, 59, 0.646);
-  overflow: hidden;
-  border-radius: 50em;
-  box-shadow: 0 50px 15px 0 rgba(0, 0, 0, 0.9);
-}
-#shutter-box:hover .apt1 {
-  animation: slide1 3s ease 0s 1 forwards;
-}
-#shutter-box:hover .apt2 {
-  animation: slide2 3s ease 0s 1 forwards;
-}
-#shutter-box:hover .apt3 {
-  animation: slide3 3s ease 0s 1 forwards;
-}
-#shutter-box:hover .apt4 {
-  animation: slide4 3s ease 0s 1 forwards;
-}
-#shutter-box:hover .apt5 {
-  animation: slide5 3s ease 0s 1 forwards;
-}
-#shutter-box:hover .apt6 {
-  animation: slide6 3s ease 0s 1 forwards;
-}
-
-.apt-slide {
-  position: absolute;
-  transform-origin: top right;
-  right: -100em;
-  width: 40em;
-  height: 60em;
-  background-color: rgba(50, 50, 50, 1);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
-}
-.apt1 {
-  right: 0em;
-  top: 23.666em;
-
-  transform: rotate(30deg);
-  animation: rev1 3s ease 0s 1 forwards;
-}
-.apt2 {
-  right: 15em;
-  top: 30em;
-
-  transform: rotate(90deg);
-  animation: rev2 3s ease 0s 1 forwards;
-}
-.apt3 {
-  right: 30em;
-  top: 23.666em;
-
-  transform: rotate(150deg);
-  animation: rev3 3s ease 0s 1 forwards;
-}
-.apt4 {
-  right: 30em;
-  top: 6.333em;
-
-  transform: rotate(-150deg);
-  animation: rev4 3s ease 0s 1 forwards;
-}
-.apt5 {
-  right: 15em;
-  top: 0em;
-
-  transform: rotate(270deg);
-  animation: rev5 3s ease 0s 1 forwards;
-}
-.apt6 {
-  right: 0em;
-  top: 6.333em;
-  transform: rotate(-30deg);
-  animation: rev6 3s ease 0s 1 forwards;
-}
-
-@keyframes slide1 {
-  from {
-    translate: 0em 0em;
-  }
-  to {
-    translate: -6em 6em;
-  }
-}
-@keyframes rev1 {
-  from {
-    translate: -6em 6em;
-  }
-  to {
-    translate: 0em 0em;
-  }
-}
-@keyframes slide2 {
-  from {
-    translate: 0em 0em;
-  }
-  to {
-    translate: -8em 0em;
-  }
-}
-@keyframes rev2 {
-  from {
-    translate: -8em 0em;
-  }
-  to {
-    translate: 0em 0em;
-  }
-}
-@keyframes slide3 {
-  from {
-    translate: 0em 0em;
-  }
-  to {
-    translate: -6em -6em;
-  }
-}
-@keyframes rev3 {
-  from {
-    translate: -6em -6em;
-  }
-  to {
-    translate: 0em 0em;
-  }
-}
-@keyframes slide4 {
-  from {
-    translate: 0em 0em;
-  }
-  to {
-    translate: 6em -6em;
-  }
-}
-@keyframes rev4 {
-  from {
-    translate: 6em -6em;
-  }
-  to {
-    translate: 0em 0em;
-  }
-}
-@keyframes slide5 {
-  from {
-    translate: 0em 0em;
-  }
-  to {
-    translate: 8em 0em;
-  }
-}
-@keyframes rev5 {
-  from {
-    translate: 8em 0em;
-  }
-  to {
-    translate: 0em 0em;
-  }
-}
-@keyframes slide6 {
-  from {
-    translate: 0em 0em;
-  }
-  to {
-    translate: 6em 6em;
-  }
-}
-@keyframes rev6 {
-  from {
-    translate: 6em 6em;
-  }
-  to {
-    translate: 0em 0em;
-  }
-} */
-
 @font-face {
   font-family: "terano-font";
   src: url("./TeranoRegular.ttf");
@@ -281,10 +52,9 @@ nav {
 
 #shutter-box {
   position: relative;
-  width: 30em;
+  width: 10em;
   aspect-ratio: 1 / 1;
   margin: auto;
-  /* background-color: rgba(176, 59, 59, 0.646); */
   background-color: #fff;
   background-image: url("../img/happyshrimp.png");
   background-size: 60%;
@@ -327,95 +97,48 @@ nav {
 .apt-slide {
   position: absolute;
   transform-origin: top right;
-  right: -100em;
-  width: 40em;
-  height: 60em;
+  right: -333.333333%;
+  width: 133.3333%;
+  height: 200%;
   background-color: rgba(50, 50, 50, 1);
-  /* background-color: red; */
-  /* box-shadow: 0 0 10em 0 rgba(0, 0, 0, 0.7); */
   transition: all 3s ease;
 }
 
-/* #apt1 {
-  right: 0em;
-  top: 23.666em;
-  rotate: 30deg;
-} */
 #apt1 {
   z-index: 1;
-  /* background-color: red; */
-  /* 210d */
-  /* background: linear-gradient(
-    90deg,
-    rgba(255, 0, 0, 1) 9%,
-    rgba(50, 50, 50, 1) 10%
-  ); */
-
   transform-origin: top left;
-
-  width: 25em;
-
-  height: 30em;
+  width: 83.3333%;
+  height: 100%;
   clip-path: polygon(0% 0, 100%50%, 0% 100%);
-
-  left: 15em;
-  top: 15em;
+  left: 50%;
+  top: 50%;
 }
 #apt2 {
-  right: 15em;
-  top: 30em;
+  right: 50%;
+  top: 100%;
   rotate: 90deg;
-
-  /* 60d */
-  /* background: linear-gradient(
-    60deg,
-    rgba(255, 0, 0, 1) 82%,
-    rgba(50, 50, 50, 1) 83%
-  ); */
 }
 #apt3 {
-  right: 30em;
-  top: 23.666em;
+  right: 100%;
+  top: 78.88666%;
   rotate: 150deg;
-  /* 60d */
-  /* background: linear-gradient(
-    60deg,
-    rgba(255, 0, 0, 1) 82%,
-    rgba(50, 50, 50, 1) 83%
-  ); */
 }
 #apt4 {
-  right: 30em;
-  top: 6.333em;
+  right: 100%;
+  top: 21.11%;
   rotate: -150deg;
 }
 #apt5 {
-  right: 15em;
-  top: 0em;
+  right: 50%;
+  top: 0%;
   rotate: 270deg;
 }
-/* #apt6 { */
-/* background-color: red; */
 
-/* right: 0em;
-  top: 6.333em;
-  rotate: -30deg; */
-
-/* -webkit-mask: url(#apt1); */
-/* mask: url(#apt1); */
-
-/* mask-mode: auto;
-  mask-type: auto; */
-
-/* mask-repeat: no-repeat; */
-/* mask-type: alpha; */
-/* } */
 .slide-shadow {
   position: absolute;
-  top: -1em;
+  top: -3.333%;
   width: 100%;
-  height: 1em;
-  /* background-color: rgba(0, 0, 0, 0.662); */
+  height: 3.333%;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
@@ -425,102 +148,74 @@ nav {
 }
 .slide-shadow1 {
   position: absolute;
-  top: 2em;
-  right: 12em;
+  top: 20%;
+  right: 48.7%;
   transform: rotate(90deg);
   width: 100%;
-  height: 1em;
-  /* background-color: rgba(0, 0, 0, 0.662); */
+  height: 2%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   transition: all 3s ease;
 }
-.slide-shadow2 {
-  position: absolute;
-  top: -1em;
-  right: -50em;
-  /* transform-origin: top left; */
-  /* transform: rotate(31deg); */
-  width: 100%;
-  height: 1em;
-  clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
-  /* background-color: rgba(0, 0, 0, 0.662); */
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  transition: all 3s ease;
-}
+
 .slide-shadow3 {
   position: absolute;
-  top: -1em;
-  right: -22.5em;
-  /* transform-origin: top left; */
-  /* transform: rotate(31deg); */
-  width: 100%;
-  height: 1em;
-  clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
-  /* background-color: rgba(0, 0, 0, 0.662); */
+  top: -1%;
+  right: -3.5156%;
+  width: 46.75%;
+  height: 1%;
+  clip-path: polygon(1.75% 0, 100% 0, 100% 100%, 0% 100%);
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   transition: all 3s ease;
 }
 .slide-shadow4 {
   position: absolute;
-  top: -1em;
-  right: -22.666em;
-  /* transform-origin: top left; */
-  /* transform: rotate(31deg); */
-  width: 100%;
-  height: 1em;
-  clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
-  /* background-color: rgba(0, 0, 0, 0.662); */
+  top: -1%;
+  right: -3.5156%;
+  width: 46.75%;
+  height: 1%;
+  clip-path: polygon(1.75% 0, 100% 0, 100% 100%, 0% 100%);
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   transition: all 3s ease;
 }
 .slide-shadow5 {
   position: absolute;
-  top: -1em;
-  right: -25em;
-  /* transform-origin: top left; */
-  /* transform: rotate(31deg); */
-  width: 100%;
-  height: 1em;
-  clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
-  /* background-color: rgba(0, 0, 0, 0.662); */
+  top: -1%;
+  right: -3.906%;
+  width: 41.5%;
+  height: 1%;
+  clip-path: polygon(2.25% 0, 100% 0, 100% 100%, 0% 100%);
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   transition: all 3s ease;
 }
 .slide-shadow6 {
   position: absolute;
-  top: 14em;
-  right: 0em;
+  top: 48%;
+  right: 19%;
   transform-origin: top left;
   transform: rotate(31deg);
-  width: 100%;
-  height: 1em;
-  /* background-color: rgba(0, 0, 0, 0.662); */
+  width: 80%;
+  height: 2%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   transition: all 3s ease;
 }
 #pseudo-shadow7 {
   position: absolute;
-  top: -0.5em;
-  left: 25.8em;
+  top: -0.5%;
+  left: 63.8%;
   transform-origin: top left;
   rotate: 59deg;
-  width: 100%;
-  height: 1em;
-  /* background-color: rgba(0, 0, 0, 0.662); */
+  width: 41.5%;
+  height: 1%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  clip-path: polygon(1.5% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(1.75% 0, 100% 0, 100% 100%, 0% 100%);
   transition: all 3s ease;
 }
 
 #shutter-box:hover #pseudo-shadow7 {
-  translate: -4.5em 0em;
+  translate: -4.75em 0em;
 }
 #shutter-box:hover .slide-shadow3 {
-  translate: 2.55em 0em;
+  translate: 2.25em 0em;
 }
 #shutter-box:hover .slide-shadow4 {
   translate: 6.9em 0em;
@@ -530,34 +225,9 @@ nav {
 }
 #apt6 {
   transform-origin: top left;
-  /* background-color: red; */
-  /* background-color: red; */
-  width: 25em;
-  /* aspect-ratio: 1 / 1; */
-  height: 30em;
+  width: 83.3333%;
+  height: 100%;
   clip-path: polygon(100% 0, 0 50%, 100% 100%);
-  /* box-shadow: 0 0 10em 0 rgba(0, 0, 0, 0.7); */
-
-  left: 15em;
-  top: 0em;
-  /* rotate: -30deg; */
-
-  /* -webkit-mask: url(#apt1); */
-  /* mask: url(#apt1); */
-
-  /* mask-mode: auto;
-  mask-type: auto; */
-
-  /* mask-repeat: no-repeat; */
-  /* mask-type: alpha; */
+  left: 50%;
+  top: 0%;
 }
-
-/* #apt6 {
-  transform-origin: top left;
-  top: 15em;
-  left: 15em;
-  width: 300px;
-  height: 300px;
-  background-color: red;
-  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-} */
