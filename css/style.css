@@ -294,6 +294,7 @@ nav {
   border-radius: 50em;
   box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.9);
   margin-top: 2em;
+  transform: skew(15deg, 0deg);
 }
 #shutter-box:hover #apt1 {
   translate: -8.02em 4.46em;
