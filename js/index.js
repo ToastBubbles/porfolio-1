@@ -61,7 +61,9 @@ onmousemove = function (e) {
     camContainer.offsetLeft +
       camLensRing.offsetLeft +
       camLensRing.offsetWidth / 2,
-    camLensRing.offsetTop + camLensRing.offsetHeight - 16,
+    camLensRing.offsetTop +
+      camLensRing.offsetHeight / 2 +
+      camContainer.offsetTop,
   ];
 
   updateGuide(newLensPos);
