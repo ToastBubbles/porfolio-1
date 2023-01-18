@@ -52,7 +52,7 @@ nav {
 
 #shutter-box {
   position: relative;
-  width: 10em;
+  width: 30em;
   aspect-ratio: 1 / 1;
   margin: auto;
   background-color: #fff;
@@ -64,25 +64,44 @@ nav {
   border-radius: 50em;
   box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.9);
   margin-top: 2em;
-  transform: skew(15deg, 0deg);
+  /* transform: skew(15deg, 0deg); */
 }
-#shutter-box:hover #apt1 {
-  translate: -8.02em 4.46em;
+/* #shutter-box:hover #apt1 {
+  translate: -26.7333% 14.8666%;
 }
 #shutter-box:hover #apt2 {
-  translate: -8em 0em;
+  translate: -26.666% 0%;
 }
 #shutter-box:hover #apt3 {
-  translate: -6em -6em;
+  translate: -20% -20%;
 }
 #shutter-box:hover #apt4 {
-  translate: 6em -6em;
+  translate: 20% -20%;
 }
 #shutter-box:hover #apt5 {
-  translate: 8em 0em;
+  translate: 26.666% 0%;
 }
 #shutter-box:hover #apt6 {
-  translate: 0em 9.46em;
+  translate: 0% 31.5333%;
+} */
+
+#shutter-box:hover #apt1 {
+  translate: -40% 20%;
+}
+#shutter-box:hover #apt2 {
+  translate: -25% 0%;
+}
+#shutter-box:hover #apt3 {
+  translate: -10% -16%;
+}
+#shutter-box:hover #apt4 {
+  translate: 10% -16%;
+}
+#shutter-box:hover #apt5 {
+  translate: 25% 0%;
+}
+#shutter-box:hover #apt6 {
+  translate: 0% 40.25%;
 }
 
 /* .guide {
@@ -212,17 +231,30 @@ nav {
 }
 
 #shutter-box:hover #pseudo-shadow7 {
-  translate: -4.75em 0em;
+  translate: -37% 0%;
 }
 #shutter-box:hover .slide-shadow3 {
-  translate: 2.25em 0em;
+  translate: 37.5% 0%;
+}
+#shutter-box:hover .slide-shadow4 {
+  translate: 25% 0%;
+}
+#shutter-box:hover .slide-shadow5 {
+  translate: 37.5% 0%;
+}
+
+/* #shutter-box:hover #pseudo-shadow7 {
+  translate: -4.5em 0em;
+}
+#shutter-box:hover .slide-shadow3 {
+  translate: 2.55em 0em;
 }
 #shutter-box:hover .slide-shadow4 {
   translate: 6.9em 0em;
 }
 #shutter-box:hover .slide-shadow5 {
   translate: 4.8em 0em;
-}
+} */
 #apt6 {
   transform-origin: top left;
   width: 83.3333%;
