@@ -42,9 +42,22 @@ body {
   margin-left: 50%;
   margin-top: 50em;
 }
+#container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container1 {
+  /* display: flex; */
+  /* margin: auto; */
+}
 #thanos {
-  width: 50px;
+  width: 75px;
   aspect-ratio: 1/1;
+  margin-left: -2em;
+  margin-bottom: -1em;
 }
 nav {
   display: flex;
