@@ -134,9 +134,9 @@ var refreshIntervalId = setInterval(function () {
 }, 1);
 
 let config = {
-  strength: 1,
-  threshold: 0.45,
-  scale: 2,
+  strength: 0.99,
+  threshold: 0.05,
+  scale: 3,
   verical: false,
 };
 
