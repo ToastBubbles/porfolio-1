@@ -134,10 +134,10 @@ var refreshIntervalId = setInterval(function () {
 }, 1);
 
 let config = {
-  strength: 0.75,
+  strength: 1,
   threshold: 0.45,
-  scale: 1,
-  verical: true,
+  scale: 2,
+  verical: false,
 };
 
 window.requestAnimFrame = (function () {
