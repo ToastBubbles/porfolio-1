@@ -50,14 +50,23 @@ body {
   align-items: center;
 }
 #container1 {
+  position: relative;
+  width: 80%;
   /* display: flex; */
   /* margin: auto; */
 }
+canvas {
+  width: 100%;
+  height: auto;
+}
 #thanos {
-  width: 75px;
+  position: absolute;
+  top: calc(100% - 5em);
+  left: 90%;
+  width: 7em;
   aspect-ratio: 1/1;
-  margin-left: -2em;
-  margin-bottom: -1em;
+  /* margin-left: -2em; */
+  /* margin-bottom: -1em; */
 }
 nav {
   display: flex;
