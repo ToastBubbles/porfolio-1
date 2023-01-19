@@ -49,7 +49,7 @@ onmousemove = function (e) {
   ];
 
   updateLens(lens2Pos);
-  console.log(camPosX, camPosY, lens2Pos);
+  // console.log(camPosX, camPosY, lens2Pos);
   // console.log(depth2Pos);
   updateDepth(depth2Pos);
 
