@@ -58,6 +58,8 @@ body {
 canvas {
   width: 100%;
   height: auto;
+  border: double black 1em;
+  border-radius: 5% 20%;
 }
 #thanos {
   position: absolute;
