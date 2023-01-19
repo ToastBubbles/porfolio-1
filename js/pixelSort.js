@@ -127,10 +127,10 @@
 // // setup();
 // // draw();
 let frames = ["./img/thanos_idle.png", "./img/thanos.gif"];
-let number = 0;
+let frameNumber = 0;
 var refreshIntervalId = setInterval(function () {
   image = document.getElementById("thanos");
-  image.src = frames[number];
+  image.src = frames[frameNumber];
 }, 1);
 
 let config = {
@@ -401,17 +401,21 @@ window.setImmediate = (() => {
     });
   }
   document.getElementById("thanos").addEventListener("click", (e) => {
-    number++;
+    frameNumber = 1;
     clearInterval(refreshIntervalId);
     image = document.getElementById("thanos");
-    image.src = frames[number];
-    if (number == 1) {
+    image.src = frames[frameNumber];
+    if (frameNumber) {
       setTimeout(() => {
         start();
+        setTimeout(() => {
+          frameNumber = 0;
+          image.src = frames[frameNumber];
+        }, 1200);
       }, 200);
     }
 
-    console.log(number);
+    console.log(frameNumber);
   });
 
   // Leggo!
